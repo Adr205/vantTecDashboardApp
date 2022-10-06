@@ -1,0 +1,7 @@
+{
+  "name": "VantTec Repository",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
