@@ -1,0 +1,59 @@
+.container{
+    h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .info{
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+
+        h5{
+            font-size: 1.2rem;
+            font-weight: 500;
+            opacity: .6;
+        }
+
+        ion-button{
+            font-size: .8rem;
+            
+        }
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 600;
+        
+    }   
+}
+
+.RoboBoat{
+    color: #d00;
+}
+
+.RoboSub{
+    color: #0d0;
+}
+
+.SDV{
+    color: #00d;
+}
+
+.UAV{
+    color: #dd0;
+}
+
+.Tutorial{
+    color: #0dd;
+}
+
+.Research{
+    color: #d0d;
+}
+
+.Perception{
+    color: #a0df;
+}

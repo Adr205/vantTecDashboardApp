@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Nasa";
+  src: url("/assets/fonts/nasalization-rg.otf");
+}
+ion-content {
+
+  --offset-bottom: auto!important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .form {
+    background-color: var(--ion-color-background);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vw;
+
+    ion-img {
+      width: 30%;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .background {
+      background-image: var(--ion-background-image);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 40%;
+      height: 70%;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      h1 {
+        font-family: "Nasa";
+        font-size: 2.5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      ion-item {
+        margin: 1rem;
+        width: 25vw;
+        border: 1px solid var(--ion-color-dark);
+        border-radius: 15px;
+      }
+      a {
+        color: var(--ion-color-dark);
+        position: absolute;
+        right: 7vw;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  ion-content {
+    .form {
+      flex-direction: column;
+      gap: 0;
+
+      ion-img {
+        width: 70%;
+      }
+
+      .background {
+        width: 70%;
+        height: 50%;
+        position: absolute;
+        top: -15%;
+      }
+
+      form {
+        ion-item {
+          margin: 1rem;
+          width: 80vw;
+        }
+      }
+    }
+  }
+}

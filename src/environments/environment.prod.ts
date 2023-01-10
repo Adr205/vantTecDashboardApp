@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  URL: 'https://vtec-repo.herokuapp.com/api'
 };

@@ -24,3 +24,21 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.action-danger{
+    span{
+        color: #f00;
+    }
+}
+
+// ::-webkit-scrollbar {
+//     display: none !important;
+// }
+
+// ion-content::webkit-scrollbar {
+// display:none !important;
+// }
+
+// *::-webkit-scrollbar {
+//     display: none !important;
+// }

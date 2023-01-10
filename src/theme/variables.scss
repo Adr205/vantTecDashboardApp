@@ -74,6 +74,28 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-color-text: #ffffff;
+	--ion-color-text-rgb: 255,255,255;
+	--ion-color-text-contrast: #000000;
+	--ion-color-text-contrast-rgb: 0,0,0;
+	--ion-color-text-shade: #e0e0e0;
+	--ion-color-text-tint: #ffffff;
+
+  --ion-color-shadow: #313131;
+	--ion-color-shadow-rgb: 255,255,51;
+	--ion-color-shadow-contrast: #000000;
+	--ion-color-shadow-contrast-rgb: 0,0,0;
+	--ion-color-shadow-shade: #e0e02d;
+	--ion-color-shadow-tint: #ffff47;
+  
+  --ion-color-background: #fff;
+	--ion-color-background-rgb: 255,255,255;
+	--ion-color-background-contrast: #000000;
+	--ion-color-background-contrast-rgb: 0,0,0;
+	--ion-color-background-shade: #e0e0e0;
+	--ion-color-background-tint: #ffffff;
+  --ion-background-image : url('/assets/logo/VANTTEC_NEGRO.png');
 }
 
 @media (prefers-color-scheme: dark) {
@@ -145,6 +167,22 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+
+    --ion-color-shadow: #bcbcbc;
+    --ion-color-shadow-rgb: 255,255,51;
+    --ion-color-shadow-contrast: #000000;
+    --ion-color-shadow-contrast-rgb: 0,0,0;
+    --ion-color-shadow-shade: #e0e02d;
+    --ion-color-shadow-tint: #ffff47;
+
+    --ion-color-background: #000;
+    --ion-color-background-rgb: 0,0,0;
+    --ion-color-background-contrast: #ffffff;
+    --ion-color-background-contrast-rgb: 255,255,255;
+    --ion-color-background-shade: #000000;
+    --ion-color-background-tint: #1a1a1a;
+
+    --ion-background-image : url('/assets/logo/VANTTEC_BLANCO.png');
   }
 
   /*

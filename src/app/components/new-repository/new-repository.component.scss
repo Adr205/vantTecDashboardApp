@@ -1,0 +1,27 @@
+ion-content{
+    ion-item{
+        margin-top: 10px;
+        --background: var(--ion-color-light);
+    }
+}
+
+ion-item {
+    --padding-start: 8px;
+  }
+  
+  .ion-chip-group {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 58px;
+  }
+  
+  ion-chip {
+    flex: 0 0 auto;
+    margin: 13px 2px;
+  }
+  
+  ion-input {
+    --padding-start: 8px !important;
+    
+    min-width: 120px;
+  }

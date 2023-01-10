@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="end">
+      <ion-button routerLink="/profile">
+        <ion-icon name="information-circle-outline" slot="icon-only" (click)="openMenu()"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+    <ion-title>VantTec</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding container">
+  <h1>{{repository.title}}</h1>
+  
+  <div class="info">
+      <h5>{{repository.user}}</h5>
+      <!-- <ion-button (click)="onClick()" expand="block" fill="clear" shape="round"> -->
+      <ion-button  expand="block" fill="outline" color="dark" (click)="goToSite(repository.url)" >Link</ion-button>
+  </div>
+
+  <p>{{repository.description}}</p>
+
+
+    <ion-chip color="primary" mode="ios" outline="true" [ngClass]='tag' *ngFor="let tag of repository.tags">
+      <ion-label>{{tag}}</ion-label>
+    </ion-chip>
+  
+</ion-content>

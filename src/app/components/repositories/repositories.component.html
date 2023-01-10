@@ -1,0 +1,9 @@
+<ion-grid class="ion-padding">
+  <ion-row>
+    <ion-col *ngFor="let repository of repositories; let i = index;" size="12" size-lg="3" sizeMd="6" sizeXs="12" sizeXl="2">
+
+      <app-repository [repository]="repository" [index]="i + 1" ></app-repository>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>

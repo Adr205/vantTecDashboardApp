@@ -1,0 +1,22 @@
+<ion-card>
+  <ion-card-header>
+    <div class="header">
+      <ion-card-title>{{repository.title}}</ion-card-title>
+      <ion-icon name="information-circle-outline" slot="icon-only" (click)="openMenu()"></ion-icon>
+    </div>
+  </ion-card-header>
+  <ion-card-content (click)="goToRepository(repository._id)">
+    <p>{{repository.description.substring(0,100)}}</p>
+    <!-- List of chips  -->
+    <!-- <h2>Tags</h2> -->
+    <div class="chips">
+      <ion-chip [ngClass]='repository.tags[0] ? repository.tags[0] : "none"'>
+        <ion-label>{{repository.tags[0] }}</ion-label>
+      </ion-chip>
+      <!-- <ion-chip *ngFor="let tag of repository.tags" [ngClass]="tag">
+        <ion-label>{{tag}}</ion-label>
+      </ion-chip>
+    -->
+  </div>
+  </ion-card-content>
+</ion-card>

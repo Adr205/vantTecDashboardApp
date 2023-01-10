@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss()">Cancel</ion-button>
+    </ion-buttons>
+    <ion-title>{{create ? "New Repository" : "Update Repository"}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [strong]="true" (click)="createRepository()" value="submit" [disabled]="!formRepository.valid">
+        {{create ? "Create" : "Update"}}</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="formRepository">
+    <ion-item lines="none">
+      <ion-label position="stacked">Repository Name</ion-label>
+      <ion-input type="text" placeholder="Repository Name" formControlName="title"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">URL</ion-label>
+      <ion-input type="text" placeholder="URL" formControlName="url"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Description</ion-label>
+      <!-- <ion-input type="text" placeholder="Description"></ion-input> -->
+      <ion-textarea rows="5" placeholder="Description of the repository" formControlName="description"></ion-textarea>
+    </ion-item>
+
+    <ion-item lines="none">
+      <div class="ion-chip-group">
+        <!-- <ion-input id="tag" (keyup.enter)="onEnter($event.target, $event.target.value)" placeholder="Add chip..."></ion-input> -->
+        <ion-input id="tag" (keyup.enter)="onEnter($event)" placeholder="Add chip..."></ion-input>
+        <ion-chip *ngFor="let chip of chips">
+          <ion-label>{{chip}}</ion-label>
+          <ion-icon name="close-circle" (click)="removeChip(chip)"></ion-icon>
+        </ion-chip>
+      </div>
+    </ion-item>
+  </form>
+
+</ion-content>

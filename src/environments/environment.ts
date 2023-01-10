@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // URL: 'https://vtec-repo.herokuapp.com/api'
+  URL: 'http://localhost:3000'
 };
 
 /*

@@ -1,0 +1,87 @@
+ion-card{
+    border-radius: 15px;
+    box-shadow: 0 0  15px var(--ion-color-shadow ) ;
+    // box-shadow: 0 0  25px rgba(var(--ion-color-text), 0.08);
+    min-height: 15rem;
+    max-height: 15rem;
+
+    height: auto;
+    
+    ion-card-header{
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            ion-icon{
+                font-size: 1.3rem;
+                cursor: pointer;
+            }
+        }
+    }
+    ion-card-content{
+        h2{
+            color: var(--ion-color-text);
+            margin: 1rem 0 1.5rem 0;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .chips{
+            // position: absolute;
+            // bottom: 0;
+            // height: 1%;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            top: 7rem;
+            right : 10%;
+        }
+    }
+}
+
+ion-action-sheet.action-danger{
+    color: #f00;
+}
+::ng-deep ion-action-sheet.action-danger .action-sheet-button .danger {
+  color: #f00;
+}
+
+.action-sheet-button{
+    color: #f00;
+}
+
+.RoboBoat{
+    color: #d00;
+}
+
+.RoboSub{
+    color: #0d0;
+}
+
+.SDV{
+    color: #00d;
+}
+
+.UAV{
+    color: #dd0;
+}
+
+.Tutorial{
+    color: #0dd;
+}
+
+.Research{
+    color: #d0d;
+}
+
+.Perception{
+    color: #a0df;
+}
+
+.none{
+    display: none;
+}
